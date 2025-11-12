@@ -876,8 +876,7 @@ color: var(--mbnav-bg-glass);
 
 
 
-  font-size: 102px;
-  text-align: right;
+  font-size: clamp(36px, 8vw, 102px);  text-align: right;
   letter-spacing: 10px;
   font-weight: 900;
   font-style: italic;
@@ -1938,8 +1937,7 @@ footer{
 
 
 .spotlight-heading{
-  font-size: 102px;
-  text-align: right;
+  font-size: clamp(36px, 8vw, 102px);  text-align: right;
   letter-spacing: 10px;
   font-weight: 900;
  
@@ -1982,7 +1980,7 @@ position: relative;
 
 
 .font-size-two{
-  font-size: 80px !important;
+   font-size: clamp(36px, 4vw, 102px) !important;
 }
 
 
