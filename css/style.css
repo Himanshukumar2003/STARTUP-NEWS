@@ -2103,3 +2103,251 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 10
   line-height: 1.5;
   margin: 0;
 }
+
+
+
+/* footer */
+
+
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.faq-description {
+  font-size: 16px;
+  color: var(--text-light);
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.faq-item {
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  width: 100%;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item:hover {
+  border-bottom-color: var(--primary-red);
+}
+
+.faq-item.active {
+  background-color: transparent;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+
+
+}
+
+.faq-header:hover {
+  background-color: transparent;
+}
+
+.faq-question {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark-bg);
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  flex: 1;
+}
+
+.faq-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.faq-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.faq-icon {
+  font-size: 58px;
+  color: var(--primary-red);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: transparent;
+  padding-bottom: 20px ;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+ 
+}
+
+.faq-answer p {
+  font-size: 21px;
+  color: var(--border-color);
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+
+.heading-vertical{
+  rotate: -90deg;
+  
+  
+}
+
+.faq-left-section{
+  background-color: var(--primary-red);
+  display: flex;
+  align-items: center;
+}
+
+
+.faq-left-section .heading-vertical{
+  color: white;
+}
+
+.faq-left-section .heading-vertical::after{
+  height: 0px !important;
+}
+
+
+
+.faq-contanier{
+  max-width: 1060px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+
+
+
+        .card {
+            text-align: center;
+           
+        }
+
+        
+        .card h3{
+color: var(--primary-red);
+        }
+
+        .founder-cards{
+flex-direction: row !important;
+gap: 20px;
+width: 100%;
+padding: 20px;
+
+        }
+     
+
+        .founder-img img{
+          height: 100px;
+          width: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        
+}
+
+.amount{
+  color: green;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.founder-logo img {
+  max-width: 200px;
+}
+
+
+ .custom-swiper-btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-swiper-btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Position the buttons on the left and right */
+    .swiper-button-prev.custom-swiper-btn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .swiper-button-next.custom-swiper-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    /* Hide the default swiper navigation */
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    .carousel-controls{
+      width: max-content;
+      margin-left: auto;
+    }
