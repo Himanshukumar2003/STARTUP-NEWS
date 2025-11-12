@@ -30,6 +30,13 @@
         }
 
 
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Cormorant Infant", serif;
+
+}
+
+
         * {
             margin: 0;
             padding: 0;
@@ -865,11 +872,30 @@ color: var(--mbnav-bg-glass);
 
 .heading h2{
  
-  color: var(--dark-bg);
+  color: var(--primary-red);
 
-  font-size: 58px;
+
+
+  font-size: 102px;
+  text-align: right;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-style: italic;
+font-family: "Cormorant Infant", serif;
 text-transform: uppercase;
+position: relative;
+margin-bottom: 20px;
+width: max-content;
+
+
+
 }
+
+
+
+
+
+
 
 .pera{
     max-width: 800px;
@@ -1921,13 +1947,13 @@ footer{
 font-family: "Cormorant Infant", serif;
 text-transform: uppercase;
 position: relative;
-margin-bottom: 50px;
+margin-bottom: 30px;
 width: max-content;
 margin-left: auto;
 
 }
 
-.spotlight-heading::after{
+h2::after{
 content: "";
 width: 100%;
 background-color: var(--dark-bg);
@@ -1942,12 +1968,21 @@ height: 2px;
 
 .main-pera{
   font-style: italic;
-  margin-top: 50px;
+  margin-top: 30px;
   color: var(--dark-bg);
-  font-size: 21px;
+  font-size: 24px;
+    font-style: italic;
+font-family: "Cormorant Infant", serif;
 max-width: 800px;
 position: relative;
   font-weight: 600;
+  letter-spacing: px;
+}
+
+
+
+.font-size-two{
+  font-size: 80px !important;
 }
 
 
