@@ -29,7 +29,9 @@
             /* translucent white */
         }
 
-
+.max-w-4xl{
+  max-width: 800px;
+}
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Cormorant Infant", serif;
@@ -1994,3 +1996,110 @@ position: absolute;
 height: 2px;
 
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.events-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.event-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.event-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-card-image img {
+  transform: scale(1.05);
+}
+
+.event-card-teal {
+  background: linear-gradient(135deg, #4a9fb5 0%, #2d6b7f 100%);
+}
+
+.event-card-rust {
+  background: linear-gradient(135deg, #c86b4a 0%, #8b4a2e 100%);
+}
+
+.event-card-green {
+  background: linear-gradient(135deg, #2d5d5f 0%, #1a3a3c 100%);
+}
+
+.event-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+background: linear-gradient(0deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 100%);
+  border-radius: 20px;
+}
+
+.event-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.event-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  margin: 0;
+}
