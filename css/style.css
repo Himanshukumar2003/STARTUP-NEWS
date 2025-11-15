@@ -1,4 +1,5 @@
        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
        
        :root {
@@ -37,7 +38,8 @@
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: "Cormorant Infant", serif;
+font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
 
@@ -912,11 +914,11 @@ color: var(--mbnav-bg-glass);
 
 
 
-  font-size: clamp(36px, 8vw, 102px);  text-align: right;
+  font-size: clamp(36px, 5vw, 102px);  text-align: right;
   letter-spacing: 10px;
   font-weight: 900;
   font-style: italic;
-font-family: "Cormorant Infant", serif;
+/* font-family: "Cormorant Infant", serif; */
 text-transform: uppercase;
 position: relative;
 margin-bottom: 20px;
@@ -1230,6 +1232,7 @@ position: absolute;
 .sidebar-pick-description {
   font-size: 13px;
   color: var(--text-light);
+  font-weight: 400px;
   line-height: 1.5;
 }
 
@@ -1978,7 +1981,6 @@ footer{
   font-weight: 900;
  
   font-style: italic;
-font-family: "Cormorant Infant", serif;
 text-transform: uppercase;
 position: relative;
 margin-bottom: 30px;
@@ -2022,7 +2024,6 @@ position: relative;
   font-size: 21px;
     font-style: italic;
 font-family: "Cormorant Infant", serif;
-max-width: 600px;
 position: relative;
   font-weight: 600;
   letter-spacing: px;
@@ -2222,14 +2223,16 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 10
 }
 
 .faq-question,.accordion-button{
-  font-size: 18px !important;
+  font-size: 21px !important;
   font-weight: 600 !important;
   color: var(--dark-bg);
   margin: 0;
-  border-bottom: 1px solid var(--dark-bg);
   font-family: Georgia, "Times New Roman", serif;
   flex: 1;
 }
+
+
+
 
 .faq-toggle-btn {
   background: none;
@@ -2280,7 +2283,7 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 10
   font-size: 21px;
   color: var(--border-color);
   line-height: 1.6;
-
+max-width: 100%;
   margin: 0;
 }
 
