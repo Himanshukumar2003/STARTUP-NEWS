@@ -937,7 +937,9 @@ width: max-content;
   font-size: 30px;
 }
 
-
+.heading h1{
+  font-style: italic;
+}
 
 
 .pera{
