@@ -814,11 +814,11 @@ background-image: linear-gradient(
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--dark-bg);
+  background: var(--dark-bg) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: var(--mbnav-bg-glass) !important;
   border-radius: 4px;
 }
 
@@ -915,7 +915,7 @@ color: var(--mbnav-bg-glass);
 
 
   font-size: clamp(36px, 5vw, 102px);  text-align: right;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   font-weight: 900;
   font-style: italic;
 /* font-family: "Cormorant Infant", serif; */
@@ -928,8 +928,14 @@ width: max-content;
 
 }
 
+.btn-dark{
+  background-color: var(--dark-bg) !important;
+}
 
 
+.card-icon{
+  font-size: 30px;
+}
 
 
 
@@ -2662,57 +2668,9 @@ color: #555;
 
 
 
-.parallax {
-  position: relative;
-  background-image: url('../img/emotional-intelligence-leadership.jpg'); /* Replace with your image */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  color: #fff;
-  z-index: 2;
-  position: relative;
-  text-align: center;
- 
+.bg-dark-light{
+  background: var(--primary-red) !important;
 }
-
-.parallax::after {
-  content: ""; /* Corrected content property */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.15) 0%,  
-    rgba(0, 0, 0, 0.85) 100% 
-  );
-}
-
-.parallax h4{
-  font-size: 50px !important;
-  color: red;
-              font-family: 'Exo', sans-serif;
-
-}
-
-.parallax .content{
-  max-width: 900px;
-  position: relative;
-
-  z-index: 2;
-}
-
-
 .list li{ padding: 8px ; border: 1px solid var(--mbnav-bg-glass); border-radius: 10px ; margin-bottom: 20px; }
 
 .list i{
@@ -2727,15 +2685,14 @@ color: #555;
 }
 
 .why-choose-cards{
-  border: 1px solid var(--mbnav-bg-glass);
   padding: 20px;
   height: 100% !important;
   display: flex;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .why-choose-cards i{
@@ -2749,8 +2706,15 @@ color: #555;
   font-weight: 500 !important;
   font-style: italic;
   font-family: var(--font-main) ;
+
 }
 
+
+.why-choose-cards .card-text{
+  margin-top: 10px;
+
+
+}
 
 
 
@@ -2856,4 +2820,9 @@ box-shadow: none !important;
 
         .accordion-item h2::after{
           height: 0;
+        }
+
+
+        .bg-dark-light h2::after{
+          background-color: white;
         }
