@@ -3,6 +3,9 @@
        
        :root {
             /* Theme Colors */
+
+            --font-main:"Cormorant Infant", serif;
+
             --primary-red: #B80000;
             --dark-bg: #000000;
             --light-gray: #F2F2F2;
@@ -36,6 +39,17 @@
 h1, h2, h3, h4, h5, h6{
   font-family: "Cormorant Infant", serif;
 
+}
+
+h3{
+  font-size: 28px ;
+  font-weight: 600 !important;
+}
+
+
+p{
+  font-size: 16px;
+  font-weight: 400;
 }
 
 
@@ -81,7 +95,11 @@ h1, h2, h3, h4, h5, h6{
             --widgets-spacing: 20px 20px;
             --widgets-spacing-row: 20px;
             --widgets-spacing-column: 20px;
-        }
+            -webkit-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+            -moz-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+            -ms-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+            -o-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+}
 
         .top-nav-left {
             display: flex;
@@ -95,10 +113,13 @@ h1, h2, h3, h4, h5, h6{
             text-decoration: none;
             font-size: 13px;
             text-decoration: none;
-
             font-weight: 500;
             transition: color 0.3s ease;
-        }
+            -webkit-transition:;
+            -moz-transition:;
+            -ms-transition:;
+            -o-transition:;
+}
 
         .top-nav-left a:hover {
             color: var(--primary-red);
@@ -117,8 +138,11 @@ h1, h2, h3, h4, h5, h6{
             transition: color 0.3s ease;
             font-weight: 400;
             font-style: normal;
-
-        }
+            -webkit-transition:;
+            -moz-transition:;
+            -ms-transition:;
+            -o-transition:;
+}
 
         .top-nav-right a:hover {
             color: var(--primary-red);
@@ -155,7 +179,8 @@ h1, h2, h3, h4, h5, h6{
             font-weight: 600;
             position: relative;
             transition: color 0.3s ease;
-        }
+           
+}
 
         .navbar-menu a:hover {
             color: var(--light-gray);
@@ -184,7 +209,8 @@ h1, h2, h3, h4, h5, h6{
             font-size: 18px;
             cursor: pointer;
             transition: color 0.3s ease;
-        }
+            
+}
 
         .search-btn:hover,
         .settings-btn:hover {
@@ -247,10 +273,13 @@ h1, h2, h3, h4, h5, h6{
         .hero-section {
             position: relative;
             width: 100%;
-            min-height: 80vh;
-            background-image: url('../img/hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
+
+              background-image: url('../img/emotional-intelligence-leadership.jpg'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+          
             display: flex;
             align-items: center;
             justify-content: center;
@@ -263,17 +292,21 @@ h1, h2, h3, h4, h5, h6{
             background-color: transparent;
 background-image: linear-gradient(
   180deg,
-  rgba(0, 0, 0, 0.15) 0%,   /* light black at top */
-  rgba(0, 0, 0, 0.85) 100%  /* dark black at bottom */
+  rgba(0, 0, 0, 0.15) 0%,  
+  rgba(0, 0, 0, 0.85) 100% 
 );
 
 
         }
 
+        h2{
+          position: relative;
+        }
+
         .hero-content {
             position: relative;
             z-index: 2;
-            color: var(--text-dark);
+            color: var(--primary-red);
             padding: 100px 20px;
         }
 
@@ -307,8 +340,9 @@ background-image: linear-gradient(
 
         .hero-content h1 {
             font-weight: 700;
-            font-size: 3rem;
+            font-size: 4rem;
             position: relative;
+           
             z-index: 5;
         }
 .hero-line{
@@ -319,7 +353,7 @@ background-image: linear-gradient(
       font-family: "Cormorant Infant", serif;
 
     line-height: 1.2em;
-    color: #fff;
+    color: var(--dark-bg);
 }
         .hero-content h1 span.line {
             display: inline-block;
@@ -343,7 +377,7 @@ background-image: linear-gradient(
       font-family: "Cormorant Infant", serif;
 
     line-height: 1.2em;
-    color: #fff;
+    color: var(--dark-bg);
 }
 
 
@@ -1965,15 +1999,30 @@ height: 2px;
 
 
 
+.accordion-item p,.accordion-item ul {
+   font-style: italic;
+  
+  color: var(--dark-bg);
+  font-size: 18px;
+    font-style: italic;
+font-family: "Cormorant Infant", serif;
+max-width: 800px;
+position: relative;
+  font-weight: 600;
+  letter-spacing: px;
+}
+
+
+
 
 .main-pera{
   font-style: italic;
   margin-top: 30px;
   color: var(--dark-bg);
-  font-size: 24px;
+  font-size: 21px;
     font-style: italic;
 font-family: "Cormorant Infant", serif;
-max-width: 800px;
+max-width: 600px;
 position: relative;
   font-weight: 600;
   letter-spacing: px;
@@ -2172,11 +2221,12 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 10
   background-color: transparent;
 }
 
-.faq-question {
-  font-size: 25px;
-  font-weight: 600;
+.faq-question,.accordion-button{
+  font-size: 18px !important;
+  font-weight: 600 !important;
   color: var(--dark-bg);
   margin: 0;
+  border-bottom: 1px solid var(--dark-bg);
   font-family: Georgia, "Times New Roman", serif;
   flex: 1;
 }
@@ -2267,48 +2317,55 @@ background: linear-gradient(0deg, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 10
 
 
 
-        .card {
+        /* .card {
             text-align: center;
            
-        }
+        } */
 
-        
-        .card h3{
-color: var(--primary-red);
-        }
+
 
         .founder-cards{
 flex-direction: row !important;
 gap: 20px;
 width: 100%;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 padding: 20px;
 
         }
      
 
         .founder-img img{
-          height: 100px;
-          width: 100px;
+          height: 80px;
+          width: 80px;
           object-fit: cover;
           border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-        
+      
+
+          
 }
 
 .amount{
-  color: green;
+  color: var(--dark-bg);
   font-size: 30px;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .founder-logo img {
   max-width: 200px;
+  height: 40px;
+  mix-blend-mode: multiply;
+
+  object-fit: contain;
 }
 
+.founder-cards .img-section{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
 
  .custom-swiper-btn {
         display: inline-block;
@@ -2351,3 +2408,449 @@ padding: 20px;
       width: max-content;
       margin-left: auto;
     }
+
+
+    .magazine-section .main-pera{
+      font-style: normal;
+    }
+
+
+
+      .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 2px solid  !important;
+      border-radius: 16px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+    }
+
+    .card-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 0px;
+    }
+
+    .card-content img.founder {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid white;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+}
+
+    .company-logo {
+      height: 24px;
+      margin-bottom: 8px;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    .founder-name {
+      font-weight: 500;
+      font-size: 16px;
+      color: #0f172a;
+    }
+
+    .founder-role {
+      font-size: 12px;
+      color: #475569;
+      margin-top: 4px;
+    }
+
+    .valuation {
+      border-top: 2px solid;
+      margin-top: 16px;
+      padding-top: 12px;
+      font-size: 25px;
+      text-align: center;
+      font-style: italic;
+      font-family: 'Exo', sans-serif;
+      font-weight: 700;
+    }
+
+    /* === Color Variations === */
+    .emerald {
+      background: linear-gradient(to bottom right, #ecfdf5, #f0fdfa);
+      border-color: #a7f3d0 !important;
+    }
+
+    .emerald .valuation {
+      color: #059669;
+      border-color: #a7f3d0 !important;
+    }
+
+    .violet {
+      background: linear-gradient(to bottom right, #f5f3ff, #ede9fe);
+      border-color: #c4b5fd !important;
+    }
+
+    .violet .valuation {
+      color: #7c3aed;
+      border-color: #c4b5fd !important;
+    }
+
+    .orange {
+      background: linear-gradient(to bottom right, #fff7ed, #fffbeb);
+      border-color: #fed7aa !important;
+    }
+
+    .orange .valuation {
+      color: #ea580c;
+      border-color: #fed7aa !important;
+    }
+
+    /*  */
+
+/* Image styling for news-cards */
+.news-cards img {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the area */
+    transition: transform 0.3s ease; /* Adds smooth image zoom effect on hover */
+}
+
+
+
+/* Card Title Styling */
+.news-cards .card-body h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #333; }
+
+/* Styling for the entire news-cards-two container */
+.news-cards-two {
+    display: flex;
+
+   
+    justify-content: space-between;
+}
+
+/* Individual card styling in news-cards-two */
+.news-cards-two .news-cards {
+    flex: 1 1 30%; /* Flexbox: allows items to grow and shrink with a base width of 30% */
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    overflow: hidden; /* Ensures border-radius works on all sides */
+}
+
+.news-cards-two .news-cards:hover {
+    transform: translateY(-10px); 
+}
+
+/* Card Image styling within news-cards-two */
+.news-cards-two img {
+    max-height: 300px;
+    width: 200px;
+
+    border-radius: 10px 0px 10px 0;
+    object-fit: cover;
+    margin-bottom: 0px;
+    border-radius: 12px 0px 0px 20px;
+    /*Roundedtopcornersfortheimages*/:;
+    -webkit-border-radius: 12px 0px 0px 20px;
+    -moz-border-radius: 12px 0px 0px 20px;
+    -ms-border-radius: 12px 0px 0px 20px;
+    -o-border-radius: 12px 0px 0px 20px;
+}
+
+
+.news-section .news-cards img{
+  margin-bottom: 0px !important;
+
+}
+
+/* Styling for the card body */
+.news-cards-two-body {
+  padding: 20px !important;
+  background-color: #f9f9f9;
+color: #555;
+
+  -webkit-border-radius:0px 20px 20px 0px;
+
+}
+
+/* Badge styling for category */
+.news-cards-two .badge {
+    font-size: 12px;
+    background-color: #17a2b8; /* Teal badge for category */
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+/* Card Text Styling */
+.news-cards-two-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0px !important;
+    color: #6c757d;
+ 
+}
+
+
+
+
+
+.news-cards-two-img-two{
+  max-height: 350px;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .news-cards-two {
+        flex-direction: column; /* Stacks cards vertically on smaller screens */
+    }
+
+    .news-cards-two .news-cards {
+        flex: 1 1 100%; /* Make each card take full width */
+    }
+}
+
+@media (max-width: 576px) {
+    .news-cards .card-body h5 {
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+    
+    .news-cards-two img {
+        max-height: 250px; /* Smaller image size on very small screens */
+    }
+}
+
+
+
+.img-border .news-cards-two-body{
+  border-radius: 0px 0px 20px 20px !important;
+  -webkit-border-radius: 0px 0px 20px 20px !important;
+  -moz-border-radius: 0px 0px 20px 20px !important;
+  -ms-border-radius: 0px 0px 20px 20px !important;
+  -o-border-radius: 0px 0px 20px 20px !important;
+}
+
+.img-border img{
+    border-radius: 20px 20px 0px 0px !important;
+    -webkit-border-radius: 20px 20px 0px 0px !important;
+    -moz-border-radius: 20px 20px 0px 0px !important;
+    -ms-border-radius: 20px 20px 0px 0px !important;
+    -o-border-radius: 20px 20px 0px 0px !important;
+}
+
+
+
+
+.parallax {
+  position: relative;
+  background-image: url('../img/emotional-intelligence-leadership.jpg'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+ 
+}
+
+.parallax::after {
+  content: ""; /* Corrected content property */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15) 0%,  
+    rgba(0, 0, 0, 0.85) 100% 
+  );
+}
+
+.parallax h4{
+  font-size: 50px !important;
+  color: red;
+              font-family: 'Exo', sans-serif;
+
+}
+
+.parallax .content{
+  max-width: 900px;
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.list li{ padding: 8px ; border: 1px solid var(--mbnav-bg-glass); border-radius: 10px ; margin-bottom: 20px; }
+
+.list i{
+  color: var(--primary-red);
+  margin-right: 10px;
+}
+
+.cards-section{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.why-choose-cards{
+  border: 1px solid var(--mbnav-bg-glass);
+  padding: 20px;
+  height: 100% !important;
+  display: flex;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.why-choose-cards i{
+  font-size: 30px;
+  color: var(--mbnav-bg-glass);
+  margin-bottom: 20px;
+}
+
+
+.sub-pera{
+  font-weight: 500 !important;
+  font-style: italic;
+  font-family: var(--font-main) ;
+}
+
+
+
+
+/*  */
+
+ .faq-container {
+            background: white;
+            border-radius: 8px;
+            padding: 60px;
+            max-width: 900px;
+            margin: 0 auto;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed){
+  color: var(--mbnav-bg-glass-to) !important;
+}
+
+
+.accordion-header{
+  font-weight: var(--font-main);
+  border-bottom: 1px solid var(--dark-bg);
+}
+
+        
+        .faq-title {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .faq-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .accordion {
+            border: none;
+        }
+
+        .accordion-item {
+            border: none;
+            border: none !important;
+            margin-bottom: 0;
+
+        }
+
+   
+    
+        .accordion-button:not(.collapsed) {
+            background: transparent;
+            color: var(--mbnav-bg-glass);
+            box-shadow: none;
+        }
+
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+}
+
+
+.accordion-button:focus, .accordion-button:focus{
+box-shadow: none !important;
+}
+
+
+   .accordion-button::after{
+    color: white !important;
+   }
+        .accordion-body {
+            padding: 0 0 20px 0;
+            border: none;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #4b5563;
+        }
+
+        @media (max-width: 768px) {
+            .faq-header {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .faq-container {
+                padding: 40px 20px;
+            }
+
+            .faq-title {
+                font-size: 24px;
+            }
+        }
+
+
+ 
+
+       
+
+
+
+        .accordion-item h2::after{
+          height: 0;
+        }
