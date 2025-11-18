@@ -1527,7 +1527,9 @@ footer{
     background: var(--dark-bg);
 }
 
-.copyright{background-color: rgba(0,0,0,0.2)}
+.copyright{background-color: rgba(0,0,0,0.2);
+  border-top: 1px solid var(--light-gray);
+}
 
 
 .magazine{
