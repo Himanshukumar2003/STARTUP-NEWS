@@ -600,8 +600,8 @@ background-image: linear-gradient(
 
         .heading-hover{
             transition: background-size .4s ease, color .4s ease;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--title-e-hcolor, #ec0040)), to(var(--title-e-hcolor, #ec0040)));
-    background-image: linear-gradient(var(--title-e-hcolor, #ec0040), var(--title-e-hcolor, #ec0040));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--title-e-hcolor, var(--primary-red))), to(var(--title-e-hcolor, var(--primary-red))));
+    background-image: linear-gradient(var(--title-e-hcolor, var(--primary-red)), var(--title-e-hcolor, var(--primary-red)));
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 0% 100%;
