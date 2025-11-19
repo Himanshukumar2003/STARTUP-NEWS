@@ -91,12 +91,11 @@ p{
 
 
 
-
         /* Top Navigation Bar */
         .top-nav {
             background-color: #111;
             transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
-            padding: 0px 20px;
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -278,17 +277,20 @@ p{
 
 
 
-
+.news-heading{
+  background-image: var(--bg);
+}
         /* hero */
         .hero-section {
             position: relative;
             width: 100%;
-
-              background-image: url('../img/02.webp'); /* Replace with your image */
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+/* 
+              background-image: url('../img/02.webp'); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
           
             display: flex;
             align-items: center;
@@ -317,10 +319,18 @@ background-image: linear-gradient(
             position: relative;
             z-index: 2;
             color: var(--primary-red);
-            padding: 100px 20px;
+            padding: 40px 20px;
         }
 
+    
 
+.hero-img{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
 .hero-section .heading{
     margin-bottom: 0px !important;
 }
@@ -350,7 +360,7 @@ background-image: linear-gradient(
 
         .hero-content h1 {
             font-weight: 700;
-            font-size: 4rem;
+            font-size: 3rem;
             position: relative;
            
             z-index: 5;
@@ -358,9 +368,8 @@ background-image: linear-gradient(
 .hero-line{
     margin-top: 40px;
         font-size: 42px;
-        max-width: 600px;
+        max-width: 900px;
     font-weight: 700;
-      font-family: "Cormorant Infant", serif;
 
     line-height: 1.2em;
     color: var(--dark-bg);
@@ -384,7 +393,6 @@ background-image: linear-gradient(
     margin-top: 40px;
         font-size: 42px;
     font-weight: 700;
-      font-family: "Cormorant Infant", serif;
 
     line-height: 1.2em;
     color: var(--dark-bg);
@@ -844,6 +852,7 @@ background-image: linear-gradient(
   --text-light: #999999;
   --card-bg: #1a1a1a;
   --border-color: #2a2a2a;
+  --bg:linear-gradient(90deg, #D81757 0%, #E4381B 100%);
 }
 
 
@@ -945,9 +954,6 @@ width: max-content;
   font-size: 30px;
 }
 
-.heading h1{
-  font-style: italic;
-}
 
 
 .pera{
@@ -1339,7 +1345,7 @@ position: absolute;
 
 
 .top-nav img{
-    width: 400px;
+    width: 200px;
 margin: auto;
 
 }
@@ -1484,9 +1490,13 @@ margin: auto;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: all 0.3s ease;
   text-transform: capitalize;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .advertise-btn:hover {
@@ -1504,19 +1514,7 @@ margin: auto;
 footer img{
     width: 300px;
 }
-.advertise-btn {
-  align-self: flex-start;
-  padding: 12px 24px;
-  border: 2px solid var(--text-dark);
-  background-color: transparent;
-  color: var(--text-dark);
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  text-transform: capitalize;
-}
+
 
 .advertise-btn:hover {
   background-color: var(--text-dark);
@@ -1528,7 +1526,7 @@ footer{
 }
 
 .copyright{background-color: rgba(0,0,0,0.2);
-  border-top: 1px solid var(--light-gray);
+  border-top: 1px solid var(--light-gray) ;
 }
 
 
@@ -1594,7 +1592,7 @@ footer{
   padding: 14px 32px;
   font-size: 16px;
   font-weight: 600;
-  background-color: #ffd700;
+  background-color: var(--primary-red) !important;
   color: var(--dark-bg);
   border: none;
   border-radius: 8px;
@@ -1717,7 +1715,7 @@ footer{
   padding: 14px 32px;
   font-size: 16px;
   font-weight: 600;
-  background-color: var(--primary-red);
+  background-color: var(--dark-bg);
   color: var(--text-dark);
   border: none;
   border-radius: 8px;
@@ -3226,7 +3224,25 @@ box-shadow: none !important;
   margin: auto;
 }
 
+.baneer-section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
 
+.baneer-section img{
+  width: 100%;
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+}
 
 .featured-crad-title{    font-size: 12px;
     line-height: 16px;
@@ -3260,3 +3276,45 @@ box-shadow: none !important;
                 z-index: 99;
                 position: relative;
                }
+
+
+
+
+                 .sup {
+            font-size: 30px;
+        }
+
+        .hero-section {
+            background-image: var(--bg);
+
+            border-radius: 0 0px 80px 80px;
+            /* background-image: none; */
+
+        }
+
+        .hero-line {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+            .btn-white{
+          background: white;
+          border: none !important;
+          color: var(--dark-bg);
+        }
+
+        .btn-white:hover{
+          background: var(--dark-bg);
+          color: white;
+        }
