@@ -370,7 +370,12 @@ background-image: linear-gradient(
       height: auto;
     }
 
-        .hero-content h1 {
+    .logo-left{
+        rotate: 50deg;
+     
+}
+
+        .hero-content .heading-hero {
             font-weight: 700;
             font-size: 3rem;
             position: relative;
@@ -935,6 +940,10 @@ color: var(--mbnav-bg-glass);
     margin-bottom: 30px;
     z-index: 2;
     position: relative;
+}
+.heading {
+  width: max-content;
+
 }
 
 .heading h2{
@@ -2872,6 +2881,7 @@ color: #555;
   padding: 20px;
   height: 100% !important;
   display: flex;
+  border: 2px solid var(--primary-red);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -3542,4 +3552,10 @@ border: 2px solid var(--primary-red);
 
 ::marker {
 color: var(--primary-red);
+}
+
+
+
+.heading-logo{
+  width: 100px;
 }
