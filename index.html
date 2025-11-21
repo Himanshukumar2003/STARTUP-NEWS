@@ -9,9 +9,6 @@
         content="Get the latest Startup News India & Indian Startup News — funding, founders, innovations, and trends shaping the startup ecosystem. Stay updated daily!">
     <meta name="keywords"
         content="startup news india, indian startup news, india startup news, latest startup news india, daily startup news india, new startups in india, top startups in india, startup success stories india, india startup funding news, indian startup ecosystem, startup india, unicorn company in india, startup index india, top Indian startup news website, best Indian startup news website, best startup news indian website, top startup news indian website, best startups in india, startup news, startup india, Indian Startup News, #1 Indian Startup News Website, India’s Leading Startup News Portal, #1 Source for Indian Startup News, India’s Top Startup News Platform, #1 Destination for Indian Startup News, India’s Best Startup News Website, #1 Hub for Indian Startup News & Updates, India’s Most Trusted Startup News Portal, #1 Indian Startup & Funding News Site, India’s Premier Startup News Network, Latest Indian Startup News & Updates, Your Hub for Indian Startup News, Indian Startup News, Trends & Insights, All About Indian Startup News, Breaking Indian Startup News Daily, India’s No.1 Startup News Portal, Top Indian Startup News Platform, Indian Startup News, Funding & Growth, Real-Time Indian Startup News, Trusted Source for Indian Startup News">
-
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,8 +22,8 @@
 
 <!-- Top Navigation Bar -->
 <div class="news-heading">
-    <p class="text-center text-white py-2 mb-0">We’re Google News Approved! Share Your Startup Story 👉
-        contact@startupnewsindia.in</p>
+    <h4 id="typeText"></h4>
+
 </div>
 <div class="top-nav ">
     <img src="img/white-logo.png" class="img-fuild">
@@ -2649,6 +2646,7 @@
                     <div class="col-lg-3">
                         <div class="quicklinks">
                             <h5>Compliance</h5>
+
                             <div class="center_content">
                                 <div class="line"></div>
                             </div>
@@ -2683,7 +2681,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const texts = [
+        "#1 Destination for Indian Startup News",
+        "1 Million+ Monthly Visitors Trust Us. We’re Google News Approved!",
+        "Share Your Startup Story 👉 contact@startupnewsindia.in"
+    ];
 
+    typeEffect();
+</script>
 <script>
     var swiper = new Swiper(".creative-section-swiper", {
         slidesPerView: 1,
