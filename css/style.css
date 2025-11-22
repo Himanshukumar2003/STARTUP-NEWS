@@ -2519,6 +2519,28 @@ padding-top: 100px;
 
 
 
+.faq-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-red);
+  transition: width 0.4s ease;
+}
+
+.faq-header:hover::after,
+.faq-item.active .faq-header::after {
+  width: 100%;
+}
+
+
 
         /* .card {
             text-align: center;
