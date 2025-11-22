@@ -3570,3 +3570,14 @@ color: var(--primary-red);
 .heading-logo{
   width: 100px;
 }
+
+
+
+.faqs-heading{
+
+justify-content: center;
+flex-direction: column-reverse;
+align-items: center;
+display: flex;
+gap: 10px;
+}
