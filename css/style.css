@@ -45,6 +45,10 @@
   max-width: 800px;
 }
 
+.max-w-7xl{
+max-width: 1200px;
+}
+
 h1, h2, h3, h4, h5, h6{
 font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif,
                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
