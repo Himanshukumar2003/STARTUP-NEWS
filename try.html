@@ -912,6 +912,14 @@
 
     </div>
 </section>
+
+
+
+<div class="news-heading w-100 text-center text-white">
+    <h4 id="typeTextTwo"></h4>
+
+</div>
+
 <section class="creative-section bg-two py-5">
     <div class="baneer-section">
         <div class="swiper creative-section-swiper">
@@ -2071,6 +2079,10 @@
     </div>
 </section>
 
+<div class="news-heading w-100 text-center text-white">
+    <h5 id="typeTextThree"></h5>
+
+</div>
 
 
 
@@ -3205,159 +3217,9 @@
                                         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                                         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-                                        <script>
-                                            var typed = new Typed("#typeText", {
-                                                strings: [
-                                                    "#1 Destination for Indian Startup News",
-                                                    "1 Million+ Monthly Visitors Trust Us. We’re Google News Approved! Share Your Startup Story 👉   contact@startupnewsindia.in ^3000"
-                                                ],
-                                                typeSpeed: 50,      // typing speed
-                                                backSpeed: 100,      // backspacing speed (if loop)
-                                                startDelay: 300,
-                                                loop: false,        // change to true if you want continuous typing
-                                                showCursor: false   // hide the blinking cursor
-                                            });
-                                        </script>
-                                        <script>
-                                            var swiper = new Swiper(".creative-section-swiper", {
-                                                slidesPerView: 1,
-                                                loop: true,
-                                                autoplay: {
-                                                    delay: 3000,
-                                                    disableOnInteraction: false,
-                                                },
-                                                navigation: {
-                                                    nextEl: ".next-btn",
-                                                    prevEl: ".prev-btn",
-                                                },
-                                            });
-                                        </script>
-
-
-                                        <script>
-                                            var swiper = new Swiper(".notes", {
-                                                slidesPerView: 3,
-                                                spaceBetween: 20,
-                                                pagination: false,
-                                                loop: true,
-                                                autoplay: {
-                                                    delay: 2500,
-                                                    disableOnInteraction: false,
-                                                },
-
-                                                navigation: {
-                                                    nextEl: ".custom-next",
-                                                    prevEl: ".custom-prev",
-                                                },
-                                                breakpoints: {
-                                                    0: { slidesPerView: 1 },
-                                                    768: { slidesPerView: 3 }
-                                                }
-                                            });
-                                        </script>
-
-
-
-                                        <script>
-                                            function toggleAnswer(faqId) {
-                                                var answer = document.getElementById("answer-" + faqId);
-                                                var icon = answer.previousElementSibling.querySelector(".faq-icon");
-
-                                                // Toggle the answer visibility
-                                                if (answer.style.display === "none" || answer.style.display === "") {
-                                                    answer.style.display = "block";
-                                                    icon.textContent = "-"; // Change icon to "-" when open
-                                                } else {
-                                                    answer.style.display = "none";
-                                                    icon.textContent = "+"; // Change icon to "+" when closed
-                                                }
-                                            }
-
-                                            // Optional: Hide answers by default when the page loads
-                                            document.addEventListener('DOMContentLoaded', function () {
-                                                var allAnswers = document.querySelectorAll('.faq-answer');
-                                                allAnswers.forEach(function (answer) {
-                                                    answer.style.display = 'none';
-                                                });
-                                            });
-                                        </script>
-                                        <script>
-
-
-                                            // Search Bar Toggle
-                                            const searchBtn = document.getElementById('searchBtn');
-                                            const searchBar = document.getElementById('searchBar');
-                                            const closeSearchBtn = document.getElementById('closeSearchBtn');
-                                            const searchInput = document.getElementById('searchInput');
-
-                                            searchBtn.addEventListener('click', () => {
-                                                searchBar.classList.add('active');
-                                                searchInput.focus();
-                                            });
-
-                                            closeSearchBtn.addEventListener('click', () => {
-                                                searchBar.classList.remove('active');
-                                            });
-
-                                            // Mobile Menu Toggle (optional for future expansion)
-                                            const navbarMenu = document.getElementById('navbarMenu');
-                                            window.addEventListener('resize', () => {
-                                                if (window.innerWidth > 768) {
-                                                    navbarMenu.classList.remove('active');
-                                                }
-                                            });
-                                        </script>
-                                        <script>
-                                            const founderSwiper = new Swiper(".founderSwiper", {
-                                                slidesPerView: 3,
-                                                spaceBetween: 20,
-                                                loop: true,
-                                                autoplay: {
-                                                    delay: 2500, // 2.5 seconds delay
-                                                    disableOnInteraction: false, // keeps autoplay even after user interaction
-                                                },
-                                                navigation: {
-                                                    nextEl: ".next-btn",
-                                                    prevEl: ".prev-btn",
-                                                },
-                                                breakpoints: {
-                                                    0: { slidesPerView: 1 },
-                                                    768: { slidesPerView: 2 },
-                                                    1024: { slidesPerView: 3 },
-                                                },
-                                            });
-                                        </script>
-                                        <script>
-                                            var swiper = new Swiper(".news-two", {
-                                                slidesPerView: 1,
-                                                spaceBetween: 20,
-
-                                                autoplay: {
-                                                    delay: 2000,   // 2 seconds
-                                                    disableOnInteraction: false,
-                                                },
-
-                                                pagination: {
-                                                    el: ".swiper-pagination",
-                                                    clickable: true,
-                                                },
-
-                                                navigation: {
-                                                    nextEl: ".next-btn",
-                                                    prevEl: ".prev-btn",
-                                                },
-
-                                                breakpoints: {
-                                                    576: { slidesPerView: 1 },
-                                                    768: { slidesPerView: 3 },
-                                                    992: { slidesPerView: 4 }
-                                                }
-                                            });
-                                        </script>
-
-
-
-
+                                        <script src="js/index.js"></script>
+                                        <script src="js/type.js"></script>
+                                        <script src="js/swiper.js"></script>
 
 
 
