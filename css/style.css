@@ -10,7 +10,7 @@
 --font-heading: 'Manrope', ui-sans-serif, system-ui, sans-serif,
                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-            --primary-red: #B80000;
+            --primary-red: #ED1C24;
             --dark-bg: #0C0C0C;
             --light-gray: #F2F2F2;
             --text-dark: #ffffff;
@@ -124,10 +124,7 @@ p{
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
-            -webkit-transition:;
-            -moz-transition:;
-            -ms-transition:;
-            -o-transition:;
+          
 }
 
         .top-nav-left a:hover {
@@ -147,10 +144,7 @@ p{
             transition: color 0.3s ease;
             font-weight: 400;
             font-style: normal;
-            -webkit-transition:;
-            -moz-transition:;
-            -ms-transition:;
-            -o-transition:;
+            
 }
 
         .top-nav-right a:hover {
@@ -284,6 +278,7 @@ p{
   background-image: var(--bg);
  padding: 3px;
  min-height: 30px;
+ font-weight: 600 !important;
 }
 
 
@@ -3462,8 +3457,17 @@ border: 2px solid var(--primary-red);
 
 
                  .sup {
-            font-size: 30px;
-        }
+          display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;     /* size change kar sakte ho */
+  height: 40px;
+  border: 2px solid white;   /* border color */
+  border-radius: 50%;
+  font-size: 20px; /* TM text size */
+  font-weight: 600;
+  padding: 3px;
+  line-height: 0;}
 
         .hero-section {
             background-image: var(--bg);
