@@ -544,6 +544,14 @@ background-image: linear-gradient(
            gap: 15px;
          }
 
+         .heading{
+width: auto !important;
+         }
+
+         .heading h2 {
+
+          width: auto !important;
+         }
          .navbar-menu a {
            font-size: 13px;
          }
@@ -2105,15 +2113,18 @@ background-image: linear-gradient(
        }
 
        .spotlight-grid {
-         display: grid;
-         grid-template-columns: repeat(5, 1fr);
+         display: flex;
          gap: 24px;
+         overflow-x: auto;
+justify-content: space-between;
+
          margin-bottom: 24px;
        }
 
        .spotlight-card {
          display: flex;
          flex-direction: column;
+         width: 100%;
          transition: transform 0.3s ease;
        }
 
